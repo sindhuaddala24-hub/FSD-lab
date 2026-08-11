@@ -1,0 +1,117 @@
+<DocType html>
+<html>
+    <head> 
+        <title> Time Table</title>
+    </head>
+    <body>
+        <center>
+            <body>
+    <center>
+
+             <img src="logo.png" width="350" height="80" alt="SASI Logo">
+
+             <h3>Department of Information Technology<br></h3>
+             <h4>ACADEMIC YEAR 2026 - 2027 <br></h4>
+             <h3> TIME TABLE</h3>
+
+   
+      <table width="100%">
+    <tr>
+        <td><b>Program:</b> B.Tech in IT</td>
+        <td><b>Semester:</b> V</td>
+        <td><b>Section:</b> A</td>
+        <td><b>Room No:</b> 16109</td>
+        <td><b>w.e.f:</b> 04-08-2026</td>
+    </tr>
+</table> 
+<br>
+<table border="1" width="100%" cellpadding="5" cellspacing="0">
+    <tr>
+    <th rowspan="2">DAY</th>
+    <th>1</th>
+    <th>2</th>
+    <th>3</th>
+    <th>4</th>
+    <th>5</th>
+    <th>6</th>
+    <th>7</th>
+    <th>8</th>
+    <th>9</th>
+</tr>
+
+<tr>
+    <th>09:00-10:00</th>
+    <th>10:00-11:00</th>
+    <th>11:00-12:00</th>
+    <th>12:00-01:00</th>
+    <th>01:00-01:50</th>
+    <th>01:50-02:40</th>
+    <th>02:40-02:50</th>
+    <th>02:50-03:40</th>
+    <th>03:40-04:30</th>
+</tr>
+
+    <tr>
+        <td><b>Monday</b></td>
+        <td colspan="2">CN Lab</td>
+        <td>AI</td>
+        <td rowspan="6" align="center">
+            L<br>U<br>N<br>C<br>H
+        </td>
+        <td colspan="2">SP</td>
+         <td rowspan="9" align="center">
+             B<br>R<br>E<br>A<br>K
+             </td>
+        <td>AOR</td>
+        <td>DWDM</td>
+    </tr>
+
+    <tr>
+        <td><b>Tuesday</b></td>
+        <td colspan="2">FSDI Lab</td>
+        <td>AT&CD</td>
+        <td colspan="2">SP</td>
+        <td>DWDM / NCC</td>
+        <td>CN / NCC</td>
+    </tr>
+
+    <tr>
+        <td><b>Wednesday</b></td>
+        <td colspan="3">NPTEL / Skilling</td>
+        <td>AOR</td>
+        <td>AT&CD</td>
+        <td colspan="2">SP</td>
+    </tr>
+
+    <tr>
+        <td><b>Thursday</b></td>
+        <td colspan="2">UIF Flutter Lab</td>
+        <td>AT&CD</td>
+        <td>CN</td>
+        <td>AJ</td>
+        <td colspan="2">APT</td>
+    </tr>
+
+    <tr>
+        <td><b>Friday</b></td>
+        <td colspan="2">AJ Lab</td>
+        <td>AJ</td>
+        <td>FSDI</td>
+        <td>CN</td>
+        <td>DWDM</td>
+        <td>AOR</td>
+    </tr>
+
+    <tr>
+        <td><b>Saturday</b></td>
+        <td colspan="2">SPA</td>
+        <td>CN</td>
+        <td>AT&CD</td>
+        <td>AOR</td>
+        <td>AJ</td>
+        <td>DWDM</td>
+    </tr>
+</table>
+        
+    </body>
+</html>
