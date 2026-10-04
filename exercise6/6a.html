@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Exercise 6 - JavaScript</title>
+</head>
+<body>
+
+    <h1>Applying JavaScript</h1>
+
+    <h2>Internal JavaScript</h2>
+
+    <p id="output"></p>
+
+    <button onclick="showOutput()">Show Output</button>
+
+    <button onclick="getInput()">Enter Details</button>
+
+    <div id="result"></div>
+
+    <script>
+        // Internal JavaScript
+
+        function showOutput() {
+            document.getElementById("output").innerHTML =
+                "Hello! This is JavaScript Output.";
+            
+            console.log("JavaScript executed successfully");
+            alert("This is an Alert Output");
+        }
+
+        function getInput() {
+            // Input using prompt()
+            let name = prompt("Enter your name:");
+            let age = prompt("Enter your age:");
+
+            // Type conversion
+            age = Number(age);
+
+            // Voter eligibility
+            let eligibility;
+
+            if (age >= 18) {
+                eligibility = "Eligible to Vote";
+            } else {
+                eligibility = "Not Eligible to Vote";
+            }
+
+            // Display result in table
+            document.getElementById("result").innerHTML =
+                "<h2>Student Details</h2>" +
+                "<table border='1' cellpadding='10'>" +
+                "<tr><th>Name</th><th>Age</th><th>Voter Eligibility</th></tr>" +
+                "<tr><td>" + name + "</td><td>" + age +
+                "</td><td>" + eligibility + "</td></tr>" +
+                "</table>";
+        }
+    </script>
+
+    <h2>External JavaScript</h2>
+
+    <button onclick="externalMessage()">External JavaScript</button>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
