@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Exercise 7a - JavaScript Objects</title>
+</head>
+<body>
+
+<h1>JavaScript Pre-defined Objects</h1>
+
+<h2>1. Document Object</h2>
+<p id="doc"></p>
+<button onclick="documentObject()">Document Object</button>
+
+<h2>2. Window Object</h2>
+<p id="win"></p>
+<button onclick="windowObject()">Window Object</button>
+
+<h2>3. Array Object</h2>
+<p id="arr"></p>
+<button onclick="arrayObject()">Array Object</button>
+
+<script>
+
+function documentObject() {
+    document.getElementById("doc").innerHTML =
+        "Title: " + document.title +
+        "<br>URL: " + document.URL;
+}
+
+function windowObject() {
+    document.getElementById("win").innerHTML =
+        "Width: " + window.innerWidth +
+        "<br>Height: " + window.innerHeight;
+
+    console.log("Window object executed");
+}
+
+function arrayObject() {
+    let fruits = ["Apple", "Banana", "Mango"];
+
+    document.getElementById("arr").innerHTML =
+        "Array: " + fruits +
+        "<br>Length: " + fruits.length +
+        "<br>First Element: " + fruits[0] +
+        "<br>After Push: " + fruits.push("Orange") +
+        "<br>Array: " + fruits;
+}
+
+</script>
+
+</body>
+</html>

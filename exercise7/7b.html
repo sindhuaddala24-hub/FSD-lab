@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Exercise 7b - JavaScript Objects</title>
+</head>
+<body>
+
+<h1>JavaScript Pre-defined Objects</h1>
+
+<h2>1. Math Object</h2>
+<p id="math"></p>
+<button onclick="mathObject()">Math Object</button>
+
+<h2>2. String Object</h2>
+<p id="string"></p>
+<button onclick="stringObject()">String Object</button>
+
+<h2>3. RegExp Object</h2>
+<p id="regex"></p>
+<button onclick="regexObject()">RegExp Object</button>
+
+<h2>4. Date Object</h2>
+<p id="date"></p>
+<button onclick="dateObject()">Date Object</button>
+
+<script>
+
+function mathObject() {
+    let n = 25;
+
+    document.getElementById("math").innerHTML =
+        "Number: " + n +
+        "<br>Square Root: " + Math.sqrt(n) +
+        "<br>Power: " + Math.pow(n, 2) +
+        "<br>Random Number: " + Math.random();
+}
+
+function stringObject() {
+    let text = "JavaScript";
+
+    document.getElementById("string").innerHTML =
+        "String: " + text +
+        "<br>Length: " + text.length +
+        "<br>Uppercase: " + text.toUpperCase() +
+        "<br>Lowercase: " + text.toLowerCase();
+}
+
+function regexObject() {
+    let text = "JavaScript is easy";
+    let pattern = /JavaScript/;
+
+    document.getElementById("regex").innerHTML =
+        "Text: " + text +
+        "<br>Pattern found: " + pattern.test(text);
+}
+
+function dateObject() {
+    let today = new Date();
+
+    document.getElementById("date").innerHTML =
+        "Current Date: " + today.toDateString() +
+        "<br>Current Time: " + today.toLocaleTimeString() +
+        "<br>Year: " + today.getFullYear();
+}
+
+</script>
+
+</body>
+</html>

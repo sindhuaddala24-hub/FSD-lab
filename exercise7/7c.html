@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Exercise 7c - User Defined Object</title>
+</head>
+<body>
+
+<h1>User-defined JavaScript Object</h1>
+
+<p id="result"></p>
+
+<script>
+
+// Constructor
+function Student(name, age, course) {
+
+    // Properties
+    this.name = name;
+    this.age = age;
+    this.course = course;
+
+    // Method
+    this.display = function() {
+        return "Name: " + this.name +
+               "<br>Age: " + this.age +
+               "<br>Course: " + this.course;
+    };
+}
+
+// Create object
+let student = new Student("Sindhu", 20, "B.Tech IT");
+
+// Accessor using getter and setter
+Object.defineProperty(student, "studentName", {
+
+    get: function() {
+        return this.name;
+    },
+
+    set: function(value) {
+        this.name = value;
+    }
+
+});
+
+// Display
+document.getElementById("result").innerHTML =
+    "<b>Student Details</b><br><br>" +
+    student.display() +
+    "<br><br>Using Getter: " + student.studentName;
+
+// Using Setter
+student.studentName = "Sindhu Addala";
+
+console.log("Updated Name: " + student.studentName);
+
+</script>
+
+</body>
+</html>
